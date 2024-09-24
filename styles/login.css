@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 80vh;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+form h1{
+    color: #ccc;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+hr{
+    color: #ffffff;
+}
+
+/* Estilo para o Label dos Campos */
+.form-label {
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Estilo para o botão de login */
+#loginButton {
+    background-color: #c2c2c2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#loginButton:hover {
+    background-color: #0056b3;
+}
+
+input[type="email"], input[type="password"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a área da imagem */
+.Photo_Area {
+    width: 60%;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para a área de login */
+.Login_Area {
+    width: 40%;
+    background-color: #2d7cc5;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+form {
+    width: 100%;
+    max-width: 350px;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+input::placeholder {
+    font-style: italic;
+    color: #ccc;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+}
+
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Photo_Area, .Login_Area {
+        width: 100%;
+    }
+
+    .Login_Area {
+        border-radius: 0px 0px 20px 20px;
+    }
+}
